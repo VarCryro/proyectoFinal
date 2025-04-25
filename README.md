@@ -1,5 +1,7 @@
-Descripción y análisis de robo de infraestructura residencial en el barrio la nueva glora
+# Descripción y análisis de la problemática de inseguridad por viviendas abandonadas en La Nueva Gloria, Bogotá
 ## Descripción del Proyecto
-Busqueda de 
+El proyecto busca analizar cómo las viviendas abandonadas o en proceso de demolición incompleta en el barrio La Nueva Gloria, Bogotá, se han convertido en puntos críticos de inseguridad. Estas estructuras inconclusas no solo representan un peligro físico para los transeúntes, sino que también son aprovechadas por delincuentes para ocultarse, planificar robos y facilitar el acceso a otras viviendas cercanas. La investigación tiene como objetivo evaluar el impacto de estos espacios abandonados en la seguridad del barrio, entender las percepciones de los residentes y proponer estrategias para mitigar los riesgos asociados a estos lugares.
+
+En particular, se enfoca en los últimos cinco años, periodo durante el cual la presencia de casas a medio demoler ha aumentado la inseguridad y ha generado una sensación de abandono en la comunidad. Este análisis incluirá tanto la recolección de datos empíricos sobre los robos en la zona como entrevistas con los habitantes para comprender cómo se sienten respecto a la situación y qué medidas consideran necesarias para mejorar la seguridad. Además, se indagará sobre las respuestas de las autoridades locales y las posibles soluciones urbanísticas para recuperar el espacio público y reducir los riesgos.
 ## Autores
 Cristian Rodrigo Vanegas Gutiérrez
