@@ -1,29 +1,228 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
 }
 
 header {
-    background-color: #4CAF50;
+    background: #337ab7;
     color: white;
-    padding: 1em;
-    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    min-height: 70px;
+    border-bottom: #2e6da4 3px solid;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 10px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    padding: 5px 0;
+}
+
+header a:hover, header a.active {
+    color: #f0ad4e;
+    font-weight: bold;
+    border-bottom: 2px solid #f0ad4e;
 }
 
 main {
-    padding: 2em;
+    padding: 2em 0;
 }
 
-section {
-    margin-bottom: 2em;
+main.container section,
+section { /* Aplicar a secciones directamente bajo main o si main tiene .container */
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #337ab7;
+    margin-top: 0;
+}
+h1 { font-size: 2em; margin-bottom: 20px; }
+h2 { font-size: 1.6em; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;}
+h3 { font-size: 1.3em; margin-bottom: 10px;}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.intro-text {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+ul li {
+    margin-bottom: 8px;
+}
+
+#map, #map-about {
+    height: 450px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-basis: calc(50% - 20px);
+    max-width: 350px;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    border: 1px solid #ddd;
+}
+.caption {
+    font-style: italic;
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.author-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+.author-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    align-self: flex-start;
+}
+.author-details {
+    flex: 1;
+    min-width: 250px;
+}
+.author-details h3 {
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+.author-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+.author-details ul li strong {
+    color: #337ab7;
 }
 
 footer {
     background-color: #222;
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em 0;
+    margin-top: 30px;
+}
+
+@media(max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .logo {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    header ul {
+        text-align: center;
+        width: 100%;
+    }
+    header li {
+        display: block;
+        padding: 8px 0;
+        border-top: 1px solid #4a8bc2;
+    }
+    header li:first-child {
+        border-top: none;
+    }
+    header a.active {
+        border-bottom: none;
+    }
+
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.4em; }
+
+    .image-container {
+        flex-basis: 100%;
+    }
+
+    .author-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .author-photo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 }

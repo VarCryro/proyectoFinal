@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""/>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemática de inseguridad por viviendas abandonadas en La Nueva Gloria, Bogotá</title>
+    <title>Problemática de Inseguridad La Nueva Gloria - Inicio</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div id="tarea"></div>
-    <div id="map" style="height: 500px;"></div>
     <header>
-        <div></div>
-        <div>
-            <h1>
-                Análisis de cosas
-            </h1>
-        </div>
-        <h1>Problemática de inseguridad por viviendas abandonadas en La Nueva Gloria, Bogotá</h1>
-        <p>Bienvenido a la página de descripción de mi proyecto.</p>      
+        <nav class="container">
+            <a href="index.html" class="logo">Proyecto La Nueva Gloria</a>
+            <ul>
+                <li><a href="index.html" class="active">Inicio / Descripción</a></li>
+                <li><a href="about.html">Acerca del Proyecto</a></li>
+                <li><a href="author.html">Autor</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section> 
-            <h2>Descripción</h2>
-            <p>El proyecto busca analizar cómo las viviendas abandonadas o en proceso de demolición incompleta en el barrio La Nueva Gloria, Bogotá, se han convertido en puntos críticos de inseguridad. Estas estructuras inconclusas no solo representan un peligro físico para los transeúntes, sino que también son aprovechadas por delincuentes para ocultarse, planificar robos y facilitar el acceso a otras viviendas cercanas. La investigación tiene como objetivo evaluar el impacto de estos espacios abandonados en la seguridad del barrio, entender las percepciones de los residentes y proponer estrategias para mitigar los riesgos asociados a estos lugares.
-
-                En particular, se enfoca en los últimos cinco años, periodo durante el cual la presencia de casas a medio demoler ha aumentado la inseguridad y ha generado una sensación de abandono en la comunidad. Este análisis incluirá tanto la recolección de datos empíricos sobre los robos en la zona como entrevistas con los habitantes para comprender cómo se sienten respecto a la situación y qué medidas consideran necesarias para mejorar la seguridad. Además, se indagará sobre las respuestas de las autoridades locales y las posibles soluciones urbanísticas para recuperar el espacio público y reducir los riesgos.</p>
+    <main class="container">
+        <section id="project-description">
+            <h1>Problemática de inseguridad por viviendas abandonadas en La Nueva Gloria, Bogotá</h1>
+            <p class="intro-text">Bienvenido a la página de descripción de este proyecto de investigación.</p>
+            
+            <p>El proyecto busca analizar cómo las viviendas abandonadas o en proceso de demolición incompleta en el barrio La Nueva Gloria, Bogotá, se han convertido en puntos críticos de inseguridad. Estas estructuras inconclusas no solo representan un peligro físico para los transeúntes, sino que también son aprovechadas por delincuentes para ocultarse, planificar robos y facilitar el acceso a otras viviendas cercanas. La investigación tiene como objetivo evaluar el impacto de estos espacios abandonados en la seguridad del barrio, entender las percepciones de los residentes y proponer estrategias para mitigar los riesgos asociados a estos lugares.</p>
+            <p>En particular, se enfoca en los últimos cinco años, periodo durante el cual la presencia de casas a medio demoler ha aumentado la inseguridad y ha generado una sensación de abandono en la comunidad. Este análisis incluirá tanto la recolección de datos empíricos sobre los robos en la zona como entrevistas con los habitantes para comprender cómo se sienten respecto a la situación y qué medidas consideran necesarias para mejorar la seguridad. Además, se indagará sobre las respuestas de las autoridades locales y las posibles soluciones urbanísticas para recuperar el espacio público y reducir los riesgos.</p>
         </section>
 
+        <section id="interactive-map-section">
+            <h2>Mapa de la Zona de Estudio</h2>
+            <p>Visualización interactiva de la cuadra o zona de interés principal en La Nueva Gloria:</p>
+            <div id="map"></div>
+            <div id="tarea" style="margin-top: 10px; padding:10px; background-color:#e0e0e0; border-radius:4px; display:none;"></div>
+        </section>
+        
+        <section id="visual-evidence">
+            <h2>Evidencia Visual (Ejemplos)</h2>
+            <p>Imágenes ilustrativas de la problemática (reemplaza con tus propias imágenes si las tienes):</p>
+            <div class="image-gallery">
+                <div class="image-container">
+                    <img src="images/mapa_viviendas.png" alt="Ejemplo de vivienda abandonada">
+                    <p class="caption"><em>Identificación de viviendas/zonas problemáticas.</em></p>
+                </div>
+                <div class="image-container">
+                    <img src="images/mapa_delincuencia.png" alt="Ejemplo de percepción de inseguridad">
+                    <p class="caption"><em>Zonas con alta percepción de inseguridad.</em></p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 - Tu Nombre</p>
+        <div class="container">
+            <p>© <span id="currentYear"></span> Cristian Rodrigo Vanegas Gutiérrez</p>
+        </div>
     </footer>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
     <script src="programa.js"></script>
 </body>
 </html>
